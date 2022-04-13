@@ -20,6 +20,6 @@ wss.on('connection', (ws) => {
 setInterval(() => {
   wss.clients.forEach((client) => {
 
-    client.send(Math.random().toString(36).substr(2, 5));
+    client.send(Math.random().toString(36).substr(2, 50));
   });
 }, 1000);
