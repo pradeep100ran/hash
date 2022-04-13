@@ -19,7 +19,7 @@ wss.on('connection', (ws) => {
 
 setInterval(() => {
   wss.clients.forEach((client) => {
-  var crypto = require("crypto");
-    client.send(new Date().toTimeString());
+
+    client.send(Math.random().toString(36).substr(2, 5));
   });
 }, 1000);
