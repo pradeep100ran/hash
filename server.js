@@ -25,7 +25,7 @@ var charset = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; 
 result="";
 for( var i=0; i < anysize; i++ )
         result += charset[Math.floor(Math.random() * charset.length)];
-console.log(result);
+
 
     client.send(result);
   });
