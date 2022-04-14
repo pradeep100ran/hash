@@ -20,11 +20,11 @@ wss.on('connection', (ws) => {
 setInterval(() => {
   wss.clients.forEach((client) => {
     
-    var anysize = 256;//the size of string 
-var charset = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; //from where to create
-result="";
-for( var i=0; i < anysize; i++ )
-        result += charset[Math.floor(Math.random() * charset.length)];
+
+e
+
+
+
 
 
     client.send(result);
